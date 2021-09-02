@@ -1,0 +1,1 @@
+alert("Estamos estudando JS no DevInHouse!")
