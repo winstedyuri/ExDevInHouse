@@ -9,47 +9,35 @@
     </head>
 
     <body>
+        <div id="matricula">
+                <label for="campoNome">Nome</label>
+                <input placeholder="Insira Seu Nome!!" id="campoNome">
+                <label for="campoNota1">Nota1</label>
+                <input type="number" id="campoNota1">
+                <label for="campoNota2">Nota2</label>
+                <input type="number" id="campoNota2">
+                <input id="campoRg">
+                <button id="botao" onclick="matriculaAluno()"> Matricular! </button>
+
+        </div>
+       
+        <div id="alunos">
+
+
+        </div>
+
         <script>
-            // {
-            //     let luizinho = {nome: 'Luizinho'} 
-            //     let zezinho = {nome: 'Zezinho'} 
-            //     let huguinho = {nome: 'Huguinho'} 
-            //     let sobrinhos = [ luizinho, zezinho, huguinho ]
 
-            //     for (let index = 0; index < sobrinhos.length; index++) {
-            //         alert(sobrinhos[index].nome)
-            //     }
-            // }
-
-            
-                // Represente um sistema que possui alunos e precisamos exibir a média desses alunos.
-                // Alunos com média superior a 7 e meio são considerados aprovados
-            
-
-            {
-                let alunos = []
-                for (let index = 0; index < 10; index++) {
-                    alunos.push({nome: 'Pedro', notas: [8, 9, 7, 8.5]})
-                    
-                    
-                }
-                // let aluno1 = {nome: 'Pedro', notas: [8, 9, 7, 8.5]}
-                // let a2 = {nome: 'Silvia', notas: [8, 9, 7, 8.5]}
-                // let a3 = {nome: 'Francisco', notas: [8, 9, 7, 8.5]}
-                // let a4 = {nome: 'Yuri', notas: [8, 9, 7, 8.5]}
-                // let a5 = {nome: 'Douglas', notas: [8, 9, 7, 8.5]}
-
-               alunos.forEach(aluno => {
-                   let media = 0
-                   aluno.notas.forEach(nota => {
-                        media += nota
-                });
-               alert('media = ' +media/aluno.notas.length)
+            function matriculaAluno () {
+                const nomeAluno = document.getElementById("campoNome").value
+                const rgAluno = document.getElementById("campoRg").value   
                 
-            });
+                document.getElementById("alunos").innerHTML = nomeAluno
 
-        }
-        </script>
+            }
+
+
+        </script>    
     </body>
 
 </html>
