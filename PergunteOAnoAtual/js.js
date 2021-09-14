@@ -9,7 +9,7 @@ dataAtual = Number(prompt("Em qual ano estamos?"))
 aniversario = confirm("Já fez aniversário neste ano?")
 
 if(aniversario == true) {
-    alert("Você tem: " + (dataAtual - dataNascimento) + " anos de idade")
+    window.alert(`Você tem ${(dataAtual - dataNascimento)} anos de idade`)
 } else {
-    alert("Você tem " + (dataAtual - dataNascimento -1) + " anos de idade")
+    alert(`Você tem ${(dataAtual - dataNascimento -1)} anos de idade`)
 }
