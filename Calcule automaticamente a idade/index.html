@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calcule automaticamente a idade</title>
+        <style>
+            body {
+            background-color: rgb(105, 105, 173);
+            color: white; 
+            font: normal 20pt Arial;
+            }   
+
+             h1 {
+            color: rgb(255, 212, 22);
+            }
+        </style>
+    </head>
+        <!--Faça uma página HTML contendo um label que exiba a mensagem “Insira sua data de nascimento”, um campo de texto que só permita inserir data (dica: input type date) e um botão rotulado “calcular idade”. Programe uma função a ser executada quando o usuário clicar no botão, que faça o cálculo da idade do usuário, e então exiba a idade em um texto na página HTML.-->
+    <body>
+        <label>Insira sua data de nascimento: </label>
+        <input type="date" id="campoData">
+        <button onclick="calcularIdade()">Chamar a função</button>
+
+
+        <script>
+            function calcularIdade() {
+                document.getElementById("campoData").innerHTML
+                var data = new Date();
+                alert(data)
+            }
+        </script>
+    </body>
+
+</html>
